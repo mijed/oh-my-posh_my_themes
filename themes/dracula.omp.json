@@ -5,15 +5,6 @@
       "alignment": "left",
       "segments": [
         {
-      "type": "python",
-      "style": "powerline",
-      "foreground": "#ffffff",
-      "background": "#3572A5",
-      "properties": {
-        "display_virtual_env": true
-      }
-    },
-        {
           "background": "#6272a4",
           "foreground": "#f8f8f2",
           "leading_diamond": "\ue0b6",
@@ -53,6 +44,17 @@
           "style": "powerline",
           "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
           "type": "node"
+        },
+        {
+          "background": "#50fa7b",
+          "foreground": "#282a36",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "display_virtual_env": true
+          },
+          "style": "powerline",
+          "template": " \ue235 {{ .Venv }} ",
+          "type": "python"
         },
         {
           "background": "#ff79c6",
